@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #121212;
+            color: #e0e0e0;
+        }
+        header {
+            background: linear-gradient(90deg, #1f1f1f, #333366);
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            background: #1a1a2e;
+            padding: 10px 0;
+        }
+        nav a {
+            color: #f0f0f0;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav a:hover {
+            color: #ffcc00;
+        }
+        section {
+            padding: 40px;
+            max-width: 900px;
+            margin: auto;
+        }
+        .about, .projects, .contact {
+            background: linear-gradient(135deg, #1f1f1f, #2e2e44);
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.5);
+            margin-bottom: 40px;
+        }
+        .project-card {
+            border: 1px solid #444;
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 20px;
+            background: linear-gradient(135deg, #2a2a2a, #3a3a55);
+        }
+        .linkedin {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 10px 18px;
+            background: #0a66c2;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+        .linkedin:hover {
+            background: #004182;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: linear-gradient(90deg, #1f1f1f, #333366);
+            color: #e0e0e0;
+            margin-top: 40px;
+        }
+        .btn {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            background: #444488;
+            color: #fff;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .btn:hover {
+            background: #6666aa;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>My Portfolio</h1>
+    <p>Web Developer | Programmer</p>
+</header>
+
+<nav>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<section id="about" class="about">
+    <h2>About Me</h2>
+    <p>
+        Hello! I am Rida Fatima.
+         I am a student learning <strong>HTML, CSS, and C++</strong>. 
+        I am passionate about web development and programming, and I enjoy building clean and colorful websites as I continue to improve my skills.
+    </p>
+</section>
+
+<section id="projects" class="projects">
+    <h2>My Projects</h2>
+    <div class="project-card">
+        <h3>Portfolio Website</h3>
+        <p>
+            This is my first project — a personal portfolio website created using HTML and CSS. 
+            It showcases my profile, skills, and contact information, and represents my journey into web development.
+        </p>
+    </div>
+    <div class="project-card">
+        <h3>Future Projects</h3>
+        <p>More projects will be added here as I continue learning and improving my skills.</p>
+    </div>
+
+    <button class="btn" onclick="showMessage()">Click for Bonus JS</button>
+    <p id="msg"></p>
+</section>
+
+<section id="contact" class="contact">
+    <h2>Contact Me</h2>
+    <p>Email: ridafatima0028@gmail.com</p>
+    <p>Instagram: whispers_of_charcoal</p>
+    <p>
+        LinkedIn: 
+        <a class="linkedin" href="https://www.linkedin.com/in/rida-fatima-276212384?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">
+            Visit My LinkedIn Profile
+        </a>
+    </p>
+</section>
+
+<footer>
+    © 2025 My Portfolio Website
+</footer>
+
+<script>
+    function showMessage() {
+        document.getElementById('msg').innerText = "Thanks for visiting my portfolio!";
+    }
+</script>
+
+</body>
+</html>
